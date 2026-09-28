@@ -18,3 +18,38 @@ print(names)
 
 names.pop(1)
 print(names)
+
+print(len(names))
+
+for name in names:
+    print(name)
+
+if "Barbie" and "Andrew" and "KelP" in names:
+    print("BFFs found")
+else:
+    print("Someone's missing")
+
+data = ["batata", 12, True]
+print(data)
+
+marks = [10, 8, 9]
+sumMarks: int = 0
+for mark in marks:
+    sumMarks += mark
+
+avg = sumMarks/len(marks)
+print(avg)
+
+#tuples
+coords = (3, 5)
+#same as list but fixed (static)
+
+#dictionaries
+ctw = {
+    "JM": "MI82",
+    "KelP": "ME81",
+    "T2": "MI82",
+    "Kings": ""
+}
+
+print(ctw["Kings"])

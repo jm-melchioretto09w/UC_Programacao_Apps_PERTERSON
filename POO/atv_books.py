@@ -21,8 +21,8 @@ class Book:
             return False
         return True
 
-livro1 = Book("Dom Casmurro", "Machado de Assis", 256)
-livro1.read(64)
-print(livro1.percentageRead())
+livro1 = Book("Paradoxo", "Poeira em alto mar", 300)
+livro1.read(68)
+print(f"{livro1.percentageRead()}%")
 print(livro1.pagesLeft())
 print(livro1.finished())

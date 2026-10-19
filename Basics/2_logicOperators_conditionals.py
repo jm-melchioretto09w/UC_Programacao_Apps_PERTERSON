@@ -14,6 +14,6 @@ else:
     print("os números não são iguais")
 
 #você pode combinar condições com "and", "or" e  "not" onde:
-#and -> ambos tem de ser verdade para dar true
-#or -> ao menos um deles tem de ser verdade para dar true
-#not -> o valor tem q ser mentira para dar true
+#and -> ambos tem de ser verdadeiro para dar true
+#or -> ao menos um deles tem de ser verdadeiro para dar true
+#not -> o valor tem q ser falso para dar true

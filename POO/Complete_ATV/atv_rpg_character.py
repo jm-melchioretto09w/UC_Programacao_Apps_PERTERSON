@@ -1,4 +1,3 @@
-#Encapsulation
 from __future__ import annotations
 
 from typing import override
@@ -107,3 +106,22 @@ chars = [Character("A"), Warrior("B", 10), Mage("C", 50)]
 print("Ataques:")
 for char in chars:
     print(f" ->\t{char.name} - {char.damage}hp")
+
+#Batalha
+print("BATTLE")
+guerreiro = Warrior("T2", 10)
+mago = Mage("TVzinha", 50)
+turno = 1
+while guerreiro.hp > 0 and mago.hp > 0:
+    print(f"Turno {turno}:")
+    guerreiro.attack(mago)
+    print(f"{guerreiro.name} ataca {mago.name} com {guerreiro.damage} de dano")
+    print(mago)
+    mago.attack(guerreiro)
+    print(f"{mago.name} ataca {guerreiro.name} com {mago.damage} de dano")
+    print(guerreiro)
+
+if guerreiro.hp <= 0:
+    print(f"{guerreiro.name} foi derrotado")
+if mago.hp <= 0:
+    print(f"{mago.name} foi derrotado")
